@@ -118,6 +118,8 @@ def login():
 def logout():
     """Handle logout of user."""
 
+    do_logout()
+
     session.pop('user_id', None)
 
     flash("You've been successfully logged out!", 'success')
