@@ -120,7 +120,6 @@ def logout():
 
     do_logout()
 
-    session.pop('user_id', None)
 
     flash("You've been successfully logged out!", 'success')
 
